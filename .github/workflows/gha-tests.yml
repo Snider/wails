@@ -24,6 +24,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -46,6 +52,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -68,6 +80,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -90,6 +108,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -113,7 +137,13 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
-      - uses: dAppServer/wails-build-action@12-build-failing-on-linuxarm64
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
+      - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
           build-name: wails
@@ -136,6 +166,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -184,6 +220,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -251,6 +293,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -280,6 +328,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -303,6 +357,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -326,6 +386,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -349,6 +415,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -372,6 +444,12 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
@@ -395,9 +473,16 @@ jobs:
           cd ./v2/cmd/wails
           go install
           wails -help
+      - name: Generate & Build template
+        run: |
+          mkdir -p ./test-plain
+          cd ./test-plain
+          wails init -n plain -t plain -ci
+          cd plain
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails.exe
           build-platform: windows/amd64
           wails-build-webview2: "embed"
