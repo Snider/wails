@@ -33,6 +33,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: linux/amd64
           wails-build-webview2: "embed"
@@ -61,6 +62,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: linux/amd64
           wails-build-webview2: "embed"
@@ -89,6 +91,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: linux/amd64
           wails-build-webview2: "embed"
@@ -117,6 +120,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: linux/amd64
           wails-build-webview2: "embed"
@@ -146,6 +150,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: linux/arm64
           build-cache: 'false'
@@ -175,6 +180,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: darwin/universal
           sign: "false"
@@ -229,6 +235,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: darwin/universal
           sign: "false"
@@ -302,6 +309,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: darwin/universal
           sign: "false"
@@ -337,6 +345,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails
           build-platform: darwin/universal
           build-obfuscate: true
@@ -366,6 +375,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails.exe
           build-platform: windows/amd64
           wails-build-webview2: "embed"
@@ -395,6 +405,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails.exe
           build-platform: windows/amd64
           wails-build-webview2: "embed"
@@ -424,6 +435,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails.exe
           build-platform: windows/amd64
           wails-build-webview2: "embed"
@@ -453,6 +465,7 @@ jobs:
       - uses: dAppServer/wails-build-action@main
         with:
           wails-dev-build: "true"
+          app-working-directory: test-plain/plain
           build-name: wails.exe
           build-platform: windows/amd64
           wails-build-webview2: "embed"
